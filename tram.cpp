@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+int n,a,b,current=0,max_capacity=0;
+cin>>n;
+while(n--){
+cin>>a>>b;
+current+=b-a;
+if(current>max_capacity) max_capacity = current;
+}
+
+cout<<max_capacity<<endl;
+return 0;
+}
