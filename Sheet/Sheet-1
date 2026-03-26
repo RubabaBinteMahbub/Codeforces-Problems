@@ -1,0 +1,12 @@
+h✅ floor, ceill, round => cmath header file
+int a,b;
+double d=(double)a/b;
+cout<<floor(d)<<endl;
+cout<<ceil(d)<<endl;
+cout<<round(d)<<endl;
+
+u✅
+string s;
+cin>>s;
+string intPart=s.substring(0,pos);
+string decPart=s.substring(pos+1);
