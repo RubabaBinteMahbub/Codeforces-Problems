@@ -10,3 +10,25 @@ string s;
 cin>>s;
 string intPart=s.substring(0,pos);
 string decPart=s.substring(pos+1);
+
+y✅
+a=a%100;
+b=b%100;
+c=c%100;
+d=d%100;
+
+long long m=(a*b*c*d)%100;
+
+if(m<10) cout<<"0"<<m<<endl;
+else cout<<m<<endl;
+
+সংখ্যাগুলো বড় হতে পারে (≤ 10^9), তাই
+সরাসরি a*b*c*d করলে overflow হতে পারে তাই আমরা mod 100 ব্যবহার করবো।
+
+এই টাইপের problem দেখলেই মনে রাখো:
+last k digits → mod 10^k
+
+লজিক :
+আমরা আসলে শুধু শেষ ২ ডিজিট চাই।
+👉 তাই বড় সংখ্যা দরকার নাই
+👉 শুধু % 100 রাখলেই শেষ ২ ডিজিট থাকে।
