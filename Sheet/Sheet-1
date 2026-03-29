@@ -46,3 +46,13 @@ long double y = d * logl(c);
 
 long double ব্যবহার করা উচিত - খুব বড় সংখ্যার 
 লগ বা exponentiation তুলনা করতে চাইলে।
+
+long long a, b, c, d;
+cin>>a>>b>>c>>d;
+
+long double x, y;
+x=b*logl(a);
+y=d*logl(c);
+
+if(x>y) cout<<"YES\n";
+else cout<<"NO\n";
