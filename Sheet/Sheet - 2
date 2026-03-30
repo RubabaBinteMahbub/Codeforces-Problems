@@ -1,7 +1,4 @@
 🟩 Print Divisors.
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
 long long n;
 cin>>n;
 
@@ -21,6 +18,37 @@ for(long long i=0; i<v.size(); i++){
 if(i != 0) cout<<" ";
 cout<<v[i];
 }
+🟩 Prime numbers between 1 to N (inclusive).
+int n;
+cin>>n;
+ 
+for(int i=2; i<=n; i++){
+  bool isPrime = true;
+    for(int j=2; j*j<=i; j++){
+    if(i%j == 0){
+    isPrime = false;
+    break;
+    }
+}
+ 
+ if(isPrime) cout<<i<<" "; 
+}
+🟩 Palindrome Check.
+long long n;
+cin>>n;
 
-return 0;
+string s;
+
+s=to_string(n);
+reverse(s.begin(), s.end());
+
+long long np=stoll(s);
+
+if(n==np){
+cout<<np<<"\n";
+cout<<"YES\n";
+}
+else{
+cout<<np<<"\n";
+cout<<"NO";
 }
