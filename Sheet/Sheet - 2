@@ -52,3 +52,20 @@ else{
 cout<<np<<"\n";
 cout<<"NO";
 }
+🟩 Lucky number 
+🌼 s.find_first_not_of("47") কী করে?
+👉 এটা string-এর মধ্যে প্রথম এমন character খুঁজে
+যেটা "4" বা "7" না
+যদি পায় → তার index return করে
+না পেলে → string::npos return করে
+
+👉 find_first_not_of = "যেটা allowed না সেটা 
+খুঁজে বের করো।
+
+string s = "47";
+cout << s.find_first_not_of("47");
+npos
+
+string s = "45";
+cout << s.find_first_not_of("47");
+1
