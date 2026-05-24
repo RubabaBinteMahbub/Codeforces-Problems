@@ -1,4 +1,5 @@
 // Not my code, copied for learning purpose 
+// without testcase but works like testcase
 
 #include<iostream>
 using namespace std;
