@@ -2,7 +2,7 @@
 using namespace std;
 
 #define endl '\n'
-#define long long ll
+#define ll long long
 
 void LemonTea(){
 
